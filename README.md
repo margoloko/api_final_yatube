@@ -1,52 +1,37 @@
-# api_final
-API проекта Yatube (v1).
+API для проекта Yatube.
 
 
 ### Установка:
 
-Клонировать репозиторий и перейти в него в командной строке:
+Склонируйте репозиторий:
 
 ```
-git clone https://github.com/sofyaserpinskaya/api_final_yatube.git
-```
+git clone https://github.com/margoloko/api_final_yatube.git
 
 ```
-cd api_final_yatube
-```
 
-Cоздать и активировать виртуальное окружение:
+Активируйте виртуальное окружение и установите зависимости из файла requirements.txt:
 
 ```
-python3 -m venv env
-```
-
-```
-source env/bin/activate
-```
-
-Установить зависимости из файла requirements.txt:
-
-```
-python3 -m pip install --upgrade pip
-```
+python -m pip install
 
 ```
 pip install -r requirements.txt
 ```
 
-Выполнить миграции:
+Выполните миграции:
 
 ```
-python3 manage.py migrate
+python manage.py migrate
 ```
 
-Запустить проект:
+Запустите проект:
 
 ```
-python3 manage.py runserver
+python manage.py runserver
 ```
 
-### Примеры:
+### Примеры использования:
 
 Получить список всех публикаций:
 
@@ -59,26 +44,30 @@ GET /api/v1/posts/
 ```
 POST /api/v1/posts/
 ```
-
-Обновление публикации по id:
+Получить список всех групп:
 
 ```
-PUT /api/v1/posts/{id}/
+GET /api/v1/groups/
 ```
 
-Добавление нового комментария к публикации:
+Добавление нового комментария:
 
 ```
 POST /api/v1/posts/{post_id}/comments/
 ```
 
-Удаление комментария к публикации по id:
+Удаление комментария по id:
 
 ```
 DELETE /api/v1/posts/{post_id}/comments/{id}/
 ```
+Получение списока подписок:
 
-Подписка пользователя от имени которого сделан запрос на пользователя переданного в теле запроса:
+```
+GET /api/v1/follow/
+```
+
+Подписка пользователя на пользователя переданного в запросе:
 
 ```
 POST /api/v1/follow/
