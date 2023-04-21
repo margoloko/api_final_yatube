@@ -80,3 +80,6 @@ POST /api/v1/follow/
 - Django
 - DRF
 - JWT + Djoser
+
+### Автор:
+Балахонова Марина
