@@ -81,5 +81,5 @@ POST /api/v1/follow/
 - DRF
 - JWT + Djoser
 
-### Автор:
-Балахонова Марина
+### Author:
+[Balakhonova Marina](https://github.com/margoloko)
