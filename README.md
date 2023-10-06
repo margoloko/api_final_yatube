@@ -10,7 +10,6 @@ api final yatube
 
 ```
 git clone https://github.com/margoloko/api_final_yatube.git
-
 ```
 
 Активируйте виртуальное окружение и установите зависимости из файла requirements.txt:
