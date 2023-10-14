@@ -16,8 +16,8 @@ git clone https://github.com/margoloko/api_final_yatube.git
 
 ```
 python -m pip install
-
-
+```
+```
 pip install -r requirements.txt
 ```
 
